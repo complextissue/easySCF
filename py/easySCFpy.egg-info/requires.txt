@@ -1,4 +1,0 @@
-anndata
-h5py
-numpy
-scipy
