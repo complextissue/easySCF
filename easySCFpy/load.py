@@ -257,8 +257,8 @@ def h5_to_image(adata: AnnData, image_layers: h5py.Group, image_name: str | None
         # fiducial = fiducial[0]
     # if isinstance(hires, np.ndarray):
        # hires = hires[0]
-    if isinstance(lowres, np.ndarray):
-        lowres = lowres[0]
+    # if isinstance(lowres, np.ndarray):
+        # lowres = lowres[0]
     if isinstance(spot, np.ndarray):
         spot = spot[0]
 
