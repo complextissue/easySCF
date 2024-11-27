@@ -250,7 +250,7 @@ def h5_to_image(adata: AnnData, image_layers: h5py.Group, image_name: str | None
 
     # fiducial = read_elem(image_layers["scale_factors/fiducial"])
     # hires = read_elem(image_layers["scale_factors/hires"])
-    lowres = read_elem(image_layers["scale_factors/lowres"])
+    # lowres = read_elem(image_layers["scale_factors/lowres"])
     spot = read_elem(image_layers["scale_factors/spot"])
 
     # if isinstance(fiducial, np.ndarray):
