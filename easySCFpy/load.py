@@ -249,14 +249,14 @@ def h5_to_image(adata: AnnData, image_layers: h5py.Group, image_name: str | None
     adata.uns["spatial"][image_name]["images"][res] = image
 
     # fiducial = read_elem(image_layers["scale_factors/fiducial"])
-    hires = read_elem(image_layers["scale_factors/hires"])
+    # hires = read_elem(image_layers["scale_factors/hires"])
     lowres = read_elem(image_layers["scale_factors/lowres"])
     spot = read_elem(image_layers["scale_factors/spot"])
 
     # if isinstance(fiducial, np.ndarray):
         # fiducial = fiducial[0]
-    if isinstance(hires, np.ndarray):
-        hires = hires[0]
+    # if isinstance(hires, np.ndarray):
+       # hires = hires[0]
     if isinstance(lowres, np.ndarray):
         lowres = lowres[0]
     if isinstance(spot, np.ndarray):
