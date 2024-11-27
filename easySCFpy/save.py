@@ -369,10 +369,10 @@ def image_to_h5(layers: h5py.Group, adata: AnnData, image_name: str = "slice"):
 
     scale_factors = adata.uns["spatial"][image_name]["scalefactors"]
     spot = scale_factors["spot_diameter_fullres"]
-    fiducial = scale_factors["fiducial_diameter_fullres"]
+    # fiducial = scale_factors["fiducial_diameter_fullres"]
     hires = scale_factors["tissue_hires_scalef"]
     lowres = scale_factors["tissue_lowres_scalef"]
     write_elem(scale_factorsGroup, "spot", spot)
-    write_elem(scale_factorsGroup, "fiducial", fiducial)
+    # write_elem(scale_factorsGroup, "fiducial", fiducial)
     write_elem(scale_factorsGroup, "hires", hires)
     write_elem(scale_factorsGroup, "lowres", lowres)
